@@ -65,7 +65,7 @@ extension FrameManager: AVCapturePhotoCaptureDelegate {
 
 extension FrameManager: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from _: AVCaptureConnection) {
-        guard !shouldCaptureQrCode else { return }
+        guard shouldCaptureQrCode else { return }
 
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }

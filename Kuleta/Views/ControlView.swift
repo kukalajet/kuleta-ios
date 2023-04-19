@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//struct ControlView: View {
+// struct ControlView: View {
 //    @Binding var comicSelected: Bool
 //    @Binding var monoSelected: Bool
 //    @Binding var crystalSelected: Bool
@@ -23,9 +23,9 @@ import SwiftUI
 //            }
 //        }
 //    }
-//}
+// }
 //
-//struct ControlView_Previews: PreviewProvider {
+// struct ControlView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        ZStack {
 //            Color.black
@@ -38,4 +38,4 @@ import SwiftUI
 //            )
 //        }
 //    }
-//}
+// }

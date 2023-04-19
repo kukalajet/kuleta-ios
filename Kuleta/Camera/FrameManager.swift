@@ -14,7 +14,7 @@ class FrameManager: NSObject, ObservableObject {
 
     @Published var current: CVPixelBuffer?
     @Published var qrCodeDetected: String?
-    
+
     let videoOutputQueue = DispatchQueue(
         label: "com.pickle.VideoOutputQ",
         qos: .userInitiated,

@@ -14,15 +14,10 @@ class ContentViewModel: ObservableObject {
 
     @Published var frame: CGImage?
     @Published var urlDetectedInImage: URL?
-    @Published var capturedPhoto: CGImage?
     @Published var error: Error?
 
     init() {
         setupSubscriptions()
-    }
-
-    func takePicture(flashMode: AVCaptureDevice.FlashMode) {
-        frameManager.takePicture(flashMode: flashMode)
     }
 
     func setupSubscriptions() {
@@ -32,11 +27,6 @@ class ContentViewModel: ObservableObject {
                 CGImage.create(from: buffer)
             }
             .assign(to: &$frame)
-
-        frameManager.$capturedPhoto
-            .receive(on: RunLoop.main)
-            .map { $0 }
-            .assign(to: &$capturedPhoto)
 
         frameManager.$qrCodeDetected
             .receive(on: RunLoop.main)

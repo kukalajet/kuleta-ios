@@ -20,6 +20,11 @@
 		126BC07329EFCC7D00CEE880 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07229EFCC7D00CEE880 /* CameraManager.swift */; };
 		126BC07529EFCDE500CEE880 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07429EFCDE500CEE880 /* FrameManager.swift */; };
 		126BC07829EFD0B000CEE880 /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07729EFD0B000CEE880 /* CGImageExtension.swift */; };
+		126BC07B29EFD13A00CEE880 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07A29EFD13A00CEE880 /* ToggleButton.swift */; };
+		126BC07D29EFD18A00CEE880 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07C29EFD18A00CEE880 /* ErrorView.swift */; };
+		126BC07F29EFD1B800CEE880 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07E29EFD1B800CEE880 /* ControlView.swift */; };
+		126BC08129EFD1F600CEE880 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC08029EFD1F600CEE880 /* FrameView.swift */; };
+		126BC08429EFD28000CEE880 /* ContentViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC08329EFD28000CEE880 /* ContentViewModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,11 @@
 		126BC07229EFCC7D00CEE880 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		126BC07429EFCDE500CEE880 /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
 		126BC07729EFD0B000CEE880 /* CGImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
+		126BC07A29EFD13A00CEE880 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		126BC07C29EFD18A00CEE880 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		126BC07E29EFD1B800CEE880 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		126BC08029EFD1F600CEE880 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		126BC08329EFD28000CEE880 /* ContentViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,8 @@
 		126BC03F29EFCAFC00CEE880 /* Kuleta */ = {
 			isa = PBXGroup;
 			children = (
+				126BC08229EFD26D00CEE880 /* ViewModels */,
+				126BC07929EFD12A00CEE880 /* Views */,
 				126BC07629EFD0A400CEE880 /* Extensions */,
 				126BC06F29EFCC2500CEE880 /* Camera */,
 				126BC04029EFCAFC00CEE880 /* KuletaApp.swift */,
@@ -159,6 +171,25 @@
 				126BC07729EFD0B000CEE880 /* CGImageExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		126BC07929EFD12A00CEE880 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				126BC07A29EFD13A00CEE880 /* ToggleButton.swift */,
+				126BC07C29EFD18A00CEE880 /* ErrorView.swift */,
+				126BC07E29EFD1B800CEE880 /* ControlView.swift */,
+				126BC08029EFD1F600CEE880 /* FrameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		126BC08229EFD26D00CEE880 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				126BC08329EFD28000CEE880 /* ContentViewModels.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,11 +322,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126BC08129EFD1F600CEE880 /* FrameView.swift in Sources */,
 				126BC04A29EFCAFD00CEE880 /* Persistence.swift in Sources */,
 				126BC07129EFCC3B00CEE880 /* CameraError.swift in Sources */,
+				126BC07F29EFD1B800CEE880 /* ControlView.swift in Sources */,
 				126BC04D29EFCAFD00CEE880 /* Kuleta.xcdatamodeld in Sources */,
 				126BC07829EFD0B000CEE880 /* CGImageExtension.swift in Sources */,
+				126BC07B29EFD13A00CEE880 /* ToggleButton.swift in Sources */,
+				126BC07D29EFD18A00CEE880 /* ErrorView.swift in Sources */,
 				126BC04329EFCAFC00CEE880 /* ContentView.swift in Sources */,
+				126BC08429EFD28000CEE880 /* ContentViewModels.swift in Sources */,
 				126BC07329EFCC7D00CEE880 /* CameraManager.swift in Sources */,
 				126BC07529EFCDE500CEE880 /* FrameManager.swift in Sources */,
 				126BC04129EFCAFC00CEE880 /* KuletaApp.swift in Sources */,

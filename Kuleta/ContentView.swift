@@ -5,85 +5,78 @@
 //  Created by Jeton Kukalaj on 19.4.23.
 //
 
-import CoreData
+import AVFoundation
 import SwiftUI
 
-struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+extension AVCaptureDevice.FlashMode {
+    func toString() -> String {
+        switch self {
+        case .auto:
+            return "Auto"
+        case .on:
+            return "On"
+        case .off:
+            return "Off"
+        default:
+            return "Auto"
+        }
+    }
+}
 
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default
-    )
-    private var items: FetchedResults<Item>
+struct ContentView: View {
+    @StateObject private var model = ContentViewModel()
+
+    @State private var showPicture = false
+
+    @State private var flashMode: AVCaptureDevice.FlashMode = .auto
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+        VStack {
+            ZStack {
+                FrameView(image: model.frame)
+                    .edgesIgnoringSafeArea(.all)
+                Text("QRCode ? \(model.urlDetectedInImage?.absoluteString ?? "Nope")")
+                ErrorView(error: model.error)
+            }
+            HStack {
+                // Flash
+                Button("Flash Mode \(flashMode.toString())") {
+                    switch flashMode {
+                    case .auto:
+                        flashMode = .on
+                    case .on:
+                        flashMode = .off
+                    case .off:
+                        flashMode = .auto
+                    @unknown default:
+                        flashMode = .auto
                     }
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                Button("Switch Camera") {
+                    // model.switchCamera
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                // Change Camera
+                Button("Take picture") {
+                    model.takePicture(flashMode: flashMode)
                 }
             }
-            Text("Select an item")
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        .sheet(isPresented: $showPicture, content: {
+            if let cgImage = model.capturedPhoto {
+                Image(cgImage, scale: 1.0, orientation: .right, label: Text("Hello world"))
+                    .resizable()
             }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        })
+        .onReceive(model.$capturedPhoto) { image in
+            if image != nil {
+                showPicture.toggle()
             }
         }
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }

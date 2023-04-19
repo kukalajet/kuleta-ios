@@ -16,6 +16,9 @@
 		126BC05729EFCAFD00CEE880 /* KuletaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC05629EFCAFD00CEE880 /* KuletaTests.swift */; };
 		126BC06129EFCAFD00CEE880 /* KuletaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC06029EFCAFD00CEE880 /* KuletaUITests.swift */; };
 		126BC06329EFCAFD00CEE880 /* KuletaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC06229EFCAFD00CEE880 /* KuletaUITestsLaunchTests.swift */; };
+		126BC07129EFCC3B00CEE880 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07029EFCC3B00CEE880 /* CameraError.swift */; };
+		126BC07329EFCC7D00CEE880 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07229EFCC7D00CEE880 /* CameraManager.swift */; };
+		126BC07529EFCDE500CEE880 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07429EFCDE500CEE880 /* FrameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		126BC05C29EFCAFD00CEE880 /* KuletaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KuletaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		126BC06029EFCAFD00CEE880 /* KuletaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuletaUITests.swift; sourceTree = "<group>"; };
 		126BC06229EFCAFD00CEE880 /* KuletaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuletaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		126BC07029EFCC3B00CEE880 /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		126BC07229EFCC7D00CEE880 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		126BC07429EFCDE500CEE880 /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		126BC03F29EFCAFC00CEE880 /* Kuleta */ = {
 			isa = PBXGroup;
 			children = (
+				126BC06F29EFCC2500CEE880 /* Camera */,
 				126BC04029EFCAFC00CEE880 /* KuletaApp.swift */,
 				126BC04229EFCAFC00CEE880 /* ContentView.swift */,
 				126BC04429EFCAFD00CEE880 /* Assets.xcassets */,
@@ -131,6 +138,16 @@
 				126BC06229EFCAFD00CEE880 /* KuletaUITestsLaunchTests.swift */,
 			);
 			path = KuletaUITests;
+			sourceTree = "<group>";
+		};
+		126BC06F29EFCC2500CEE880 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				126BC07029EFCC3B00CEE880 /* CameraError.swift */,
+				126BC07229EFCC7D00CEE880 /* CameraManager.swift */,
+				126BC07429EFCDE500CEE880 /* FrameManager.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				126BC04A29EFCAFD00CEE880 /* Persistence.swift in Sources */,
+				126BC07129EFCC3B00CEE880 /* CameraError.swift in Sources */,
 				126BC04D29EFCAFD00CEE880 /* Kuleta.xcdatamodeld in Sources */,
 				126BC04329EFCAFC00CEE880 /* ContentView.swift in Sources */,
+				126BC07329EFCC7D00CEE880 /* CameraManager.swift in Sources */,
+				126BC07529EFCDE500CEE880 /* FrameManager.swift in Sources */,
 				126BC04129EFCAFC00CEE880 /* KuletaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

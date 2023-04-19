@@ -31,8 +31,8 @@ class FrameManager: NSObject, ObservableObject {
 
     override private init() {
         super.init()
-        CameraManager.shared.set(self, queue: videoOutputQueue)
-        CameraManager.shared.setMetaDataOutputDelegate(self, queue: qrCodeOutputQueue)
+        ScanManager.shared.set(self, queue: videoOutputQueue)
+        ScanManager.shared.setMetaDataOutputDelegate(self, queue: qrCodeOutputQueue)
     }
 }
 

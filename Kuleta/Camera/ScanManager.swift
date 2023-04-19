@@ -1,5 +1,5 @@
 //
-//  CameraManager.swift
+//  ScanManager.swift
 //  Kuleta
 //
 //  Created by Jeton Kukalaj on 19.4.23.
@@ -8,12 +8,12 @@
 import AVFoundation
 import Foundation
 
-private enum CameraManagerStatus {
+private enum ScanManagerStatus {
     case unconfigured, configured, unauthorized, failed
 }
 
-class CameraManager: ObservableObject {
-    static let shared = CameraManager()
+class ScanManager: ObservableObject {
+    static let shared = ScanManager()
 
     @Published var error: CameraError?
 
@@ -21,10 +21,9 @@ class CameraManager: ObservableObject {
     private let sessionQueue = DispatchQueue(label: "com.pickle.SessionQ")
 
     private let videoOutput = AVCaptureVideoDataOutput()
-    private let photoOutput = AVCapturePhotoOutput()
     private var metaDataOutput = AVCaptureMetadataOutput()
 
-    private var status = CameraManagerStatus.unconfigured
+    private var status = ScanManagerStatus.unconfigured
 
     private init() {
         configure()
@@ -96,14 +95,6 @@ class CameraManager: ObservableObject {
             return
         }
 
-        // Output for Photo
-        if session.canAddOutput(photoOutput) {
-            session.addOutput(photoOutput)
-        } else {
-            set(error: .cannotAddOutput)
-            status = .failed
-        }
-
         // Output for Meta Data like QRCode
         if session.canAddOutput(metaDataOutput) {
             session.addOutput(metaDataOutput)
@@ -127,14 +118,6 @@ class CameraManager: ObservableObject {
         }
 
         status = .configured
-    }
-
-    func takePicture(_ delegate: AVCapturePhotoCaptureDelegate, queue: DispatchQueue, flashMode: AVCaptureDevice.FlashMode = .auto) {
-        let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
-        settings.flashMode = flashMode
-        queue.async {
-            self.photoOutput.capturePhoto(with: settings, delegate: delegate)
-        }
     }
 
     func setMetaDataOutputDelegate(_ delegate: AVCaptureMetadataOutputObjectsDelegate, queue: DispatchQueue) {

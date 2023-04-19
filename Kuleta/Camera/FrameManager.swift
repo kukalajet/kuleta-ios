@@ -14,19 +14,9 @@ class FrameManager: NSObject, ObservableObject {
 
     @Published var current: CVPixelBuffer?
     @Published var qrCodeDetected: String?
-    @Published var capturedPhoto: CGImage?
-
-    var shouldCaptureQrCode = true
-
+    
     let videoOutputQueue = DispatchQueue(
         label: "com.pickle.VideoOutputQ",
-        qos: .userInitiated,
-        attributes: [],
-        autoreleaseFrequency: .workItem
-    )
-
-    let photoCaptureOutputQueue = DispatchQueue(
-        label: "com.pickle.PhotoCaptureOutputQ",
         qos: .userInitiated,
         attributes: [],
         autoreleaseFrequency: .workItem
@@ -46,27 +36,8 @@ class FrameManager: NSObject, ObservableObject {
     }
 }
 
-extension FrameManager: AVCapturePhotoCaptureDelegate {
-    func takePicture(flashMode: AVCaptureDevice.FlashMode) {
-        CameraManager.shared.takePicture(self, queue: photoCaptureOutputQueue, flashMode: flashMode)
-    }
-
-    func photoOutput(_: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error _: Error?) {
-        if let imageData = photo.fileDataRepresentation() {
-            guard let newImage = UIImage(data: imageData) else { return }
-            guard let cgImage = newImage.cgImage else { return }
-
-            DispatchQueue.main.async {
-                self.capturedPhoto = cgImage
-            }
-        }
-    }
-}
-
 extension FrameManager: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from _: AVCaptureConnection) {
-        guard shouldCaptureQrCode else { return }
-
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }

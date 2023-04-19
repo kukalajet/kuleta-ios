@@ -42,10 +42,10 @@ class CameraManager: ObservableObject {
             sessionQueue.suspend()
             AVCaptureDevice.requestAccess(for: .video) { authorized in
                 if !authorized {
-                    status = .unauthorized
-                    set(error: .deniedAuthorization)
+                    self.status = .unauthorized
+                    self.set(error: .deniedAuthorization)
                 }
-                sessionQueue.resume()
+                self.sessionQueue.resume()
             }
         case .restricted:
             status = .unauthorized
@@ -156,8 +156,8 @@ class CameraManager: ObservableObject {
     public func configure() {
         checkPermissions()
         sessionQueue.async {
-            configureCaptureSession()
-            session.startRunning()
+            self.configureCaptureSession()
+            self.session.startRunning()
         }
     }
 }

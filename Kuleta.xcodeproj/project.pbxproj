@@ -114,10 +114,9 @@
 		126BC03F29EFCAFC00CEE880 /* Kuleta */ = {
 			isa = PBXGroup;
 			children = (
+				12B75A9229F1ADB1001AA9F9 /* Core */,
 				126BC08229EFD26D00CEE880 /* ViewModels */,
 				126BC07929EFD12A00CEE880 /* Views */,
-				126BC07629EFD0A400CEE880 /* Extensions */,
-				126BC06F29EFCC2500CEE880 /* Camera */,
 				126BC04029EFCAFC00CEE880 /* KuletaApp.swift */,
 				126BC04229EFCAFC00CEE880 /* ContentView.swift */,
 				126BC04429EFCAFD00CEE880 /* Assets.xcassets */,
@@ -187,6 +186,15 @@
 				126BC08329EFD28000CEE880 /* ContentViewModels.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		12B75A9229F1ADB1001AA9F9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				126BC07629EFD0A400CEE880 /* Extensions */,
+				126BC06F29EFCC2500CEE880 /* Camera */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

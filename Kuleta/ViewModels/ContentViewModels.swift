@@ -10,7 +10,7 @@ import CoreImage
 
 class ContentViewModel: ObservableObject {
     private let frameManager = FrameManager.shared
-    private let cameraManager = CameraManager.shared
+    private let cameraManager = ScanManager.shared
 
     @Published var frame: CGImage?
     @Published var urlDetectedInImage: URL?
@@ -18,6 +18,10 @@ class ContentViewModel: ObservableObject {
 
     init() {
         setupSubscriptions()
+    }
+
+    func toggleTorch(on: Bool) {
+        frameManager.toggleTorch(on: on)
     }
 
     func setupSubscriptions() {

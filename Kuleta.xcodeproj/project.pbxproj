@@ -23,6 +23,7 @@
 		126BC07D29EFD18A00CEE880 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07C29EFD18A00CEE880 /* ErrorView.swift */; };
 		126BC08129EFD1F600CEE880 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC08029EFD1F600CEE880 /* FrameView.swift */; };
 		126BC08429EFD28000CEE880 /* ContentViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC08329EFD28000CEE880 /* ContentViewModels.swift */; };
+		12B75A9129F08F52001AA9F9 /* TorchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B75A9029F08F52001AA9F9 /* TorchError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		126BC07C29EFD18A00CEE880 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		126BC08029EFD1F600CEE880 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		126BC08329EFD28000CEE880 /* ContentViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModels.swift; sourceTree = "<group>"; };
+		12B75A9029F08F52001AA9F9 /* TorchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				126BC07029EFCC3B00CEE880 /* CameraError.swift */,
 				126BC07229EFCC7D00CEE880 /* ScanManager.swift */,
 				126BC07429EFCDE500CEE880 /* FrameManager.swift */,
+				12B75A9029F08F52001AA9F9 /* TorchError.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				126BC04329EFCAFC00CEE880 /* ContentView.swift in Sources */,
 				126BC08429EFD28000CEE880 /* ContentViewModels.swift in Sources */,
 				126BC07329EFCC7D00CEE880 /* ScanManager.swift in Sources */,
+				12B75A9129F08F52001AA9F9 /* TorchError.swift in Sources */,
 				126BC07529EFCDE500CEE880 /* FrameManager.swift in Sources */,
 				126BC04129EFCAFC00CEE880 /* KuletaApp.swift in Sources */,
 			);

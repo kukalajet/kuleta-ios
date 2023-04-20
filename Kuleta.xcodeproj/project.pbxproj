@@ -191,10 +191,18 @@
 		12B75A9229F1ADB1001AA9F9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				12B75A9329F1AED3001AA9F9 /* Framework */,
 				126BC07629EFD0A400CEE880 /* Extensions */,
-				126BC06F29EFCC2500CEE880 /* Camera */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		12B75A9329F1AED3001AA9F9 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				126BC06F29EFCC2500CEE880 /* Camera */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

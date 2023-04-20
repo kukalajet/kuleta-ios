@@ -126,6 +126,18 @@ class ScanManager: ObservableObject {
         }
     }
 
+    func toggleTorch(on: Bool) {
+        guard let device = AVCaptureDevice.default(for: .video) else { return }
+        guard device.hasTorch else { return }
+
+        do {
+            try device.lockForConfiguration()
+            device.torchMode = on ? .on : .off
+        } catch {
+            return
+        }
+    }
+
     // Passing video data to an Output set by a delegate
     func set(
         _ delegate: AVCaptureVideoDataOutputSampleBufferDelegate,

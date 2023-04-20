@@ -34,6 +34,10 @@ class FrameManager: NSObject, ObservableObject {
         ScanManager.shared.set(self, queue: videoOutputQueue)
         ScanManager.shared.setMetaDataOutputDelegate(self, queue: qrCodeOutputQueue)
     }
+
+    func toggleTorch(on: Bool) {
+        ScanManager.shared.toggleTorch(on: on)
+    }
 }
 
 extension FrameManager: AVCaptureMetadataOutputObjectsDelegate {

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12186AB329F4660200F154FB /* InvoiceCheckRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12186AB229F4660200F154FB /* InvoiceCheckRepository.swift */; };
+		126312BA29F3D5CF0069F6A4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312B929F3D5CF0069F6A4 /* Endpoint.swift */; };
+		126312BC29F3D64F0069F6A4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312BB29F3D64F0069F6A4 /* HTTPMethod.swift */; };
+		126312BE29F3D6EF0069F6A4 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312BD29F3D6EF0069F6A4 /* RequestError.swift */; };
+		126312C529F3DA270069F6A4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312C429F3DA270069F6A4 /* HTTPClient.swift */; };
+		126312D029F44D830069F6A4 /* InvoiceCheckEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312CF29F44D830069F6A4 /* InvoiceCheckEndpoint.swift */; };
+		126312D229F44F230069F6A4 /* InvoiceCheckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312D129F44F230069F6A4 /* InvoiceCheckService.swift */; };
+		126312D429F450F00069F6A4 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312D329F450F00069F6A4 /* Invoice.swift */; };
+		126312D629F451C40069F6A4 /* Tax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312D529F451C40069F6A4 /* Tax.swift */; };
+		126312D829F4529E0069F6A4 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312D729F4529E0069F6A4 /* Seller.swift */; };
+		126312DA29F4539C0069F6A4 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312D929F4539C0069F6A4 /* PaymentMethod.swift */; };
+		126312DC29F453C80069F6A4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312DB29F453C80069F6A4 /* Item.swift */; };
 		126BC04129EFCAFC00CEE880 /* KuletaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC04029EFCAFC00CEE880 /* KuletaApp.swift */; };
 		126BC04329EFCAFC00CEE880 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC04229EFCAFC00CEE880 /* ContentView.swift */; };
 		126BC04529EFCAFD00CEE880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126BC04429EFCAFD00CEE880 /* Assets.xcassets */; };
@@ -44,6 +56,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12186AB229F4660200F154FB /* InvoiceCheckRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCheckRepository.swift; sourceTree = "<group>"; };
+		126312B929F3D5CF0069F6A4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		126312BB29F3D64F0069F6A4 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		126312BD29F3D6EF0069F6A4 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		126312C429F3DA270069F6A4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		126312CF29F44D830069F6A4 /* InvoiceCheckEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCheckEndpoint.swift; sourceTree = "<group>"; };
+		126312D129F44F230069F6A4 /* InvoiceCheckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCheckService.swift; sourceTree = "<group>"; };
+		126312D329F450F00069F6A4 /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		126312D529F451C40069F6A4 /* Tax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tax.swift; sourceTree = "<group>"; };
+		126312D729F4529E0069F6A4 /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		126312D929F4539C0069F6A4 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		126312DB29F453C80069F6A4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		126BC03D29EFCAFC00CEE880 /* Kuleta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kuleta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		126BC04029EFCAFC00CEE880 /* KuletaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuletaApp.swift; sourceTree = "<group>"; };
 		126BC04229EFCAFC00CEE880 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +115,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126312B629F3D5270069F6A4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				126312BF29F3D7BF0069F6A4 /* Models */,
+				126312B729F3D52B0069F6A4 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		126312B729F3D52B0069F6A4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				126312C929F3E1BE0069F6A4 /* Services */,
+				126312C629F3DDA10069F6A4 /* Endpoints */,
+				126312B829F3D5C00069F6A4 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		126312B829F3D5C00069F6A4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				126312B929F3D5CF0069F6A4 /* Endpoint.swift */,
+				126312BB29F3D64F0069F6A4 /* HTTPMethod.swift */,
+				126312BD29F3D6EF0069F6A4 /* RequestError.swift */,
+				126312C429F3DA270069F6A4 /* HTTPClient.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		126312BF29F3D7BF0069F6A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				126312D329F450F00069F6A4 /* Invoice.swift */,
+				126312D529F451C40069F6A4 /* Tax.swift */,
+				126312D729F4529E0069F6A4 /* Seller.swift */,
+				126312D929F4539C0069F6A4 /* PaymentMethod.swift */,
+				126312DB29F453C80069F6A4 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		126312C629F3DDA10069F6A4 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				126312CF29F44D830069F6A4 /* InvoiceCheckEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		126312C929F3E1BE0069F6A4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				126312D129F44F230069F6A4 /* InvoiceCheckService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		126312CC29F448230069F6A4 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				12186AB229F4660200F154FB /* InvoiceCheckRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		126BC03429EFCAFC00CEE880 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +281,8 @@
 		12B75A9229F1ADB1001AA9F9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				126312CC29F448230069F6A4 /* Repositories */,
+				126312B629F3D5270069F6A4 /* Data */,
 				12B75A9329F1AED3001AA9F9 /* Framework */,
 				126BC07629EFD0A400CEE880 /* Extensions */,
 			);
@@ -336,16 +428,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				126BC08129EFD1F600CEE880 /* FrameView.swift in Sources */,
+				126312D629F451C40069F6A4 /* Tax.swift in Sources */,
 				126BC04A29EFCAFD00CEE880 /* Persistence.swift in Sources */,
+				126312DC29F453C80069F6A4 /* Item.swift in Sources */,
+				12186AB329F4660200F154FB /* InvoiceCheckRepository.swift in Sources */,
 				126BC07129EFCC3B00CEE880 /* CameraError.swift in Sources */,
+				126312BA29F3D5CF0069F6A4 /* Endpoint.swift in Sources */,
+				126312BC29F3D64F0069F6A4 /* HTTPMethod.swift in Sources */,
 				126BC04D29EFCAFD00CEE880 /* Kuleta.xcdatamodeld in Sources */,
 				126BC07829EFD0B000CEE880 /* CGImageExtension.swift in Sources */,
 				126BC07D29EFD18A00CEE880 /* ErrorView.swift in Sources */,
+				126312D229F44F230069F6A4 /* InvoiceCheckService.swift in Sources */,
 				126BC04329EFCAFC00CEE880 /* ContentView.swift in Sources */,
+				126312D429F450F00069F6A4 /* Invoice.swift in Sources */,
 				126BC08429EFD28000CEE880 /* ContentViewModels.swift in Sources */,
+				126312D029F44D830069F6A4 /* InvoiceCheckEndpoint.swift in Sources */,
 				126BC07329EFCC7D00CEE880 /* ScanManager.swift in Sources */,
+				126312BE29F3D6EF0069F6A4 /* RequestError.swift in Sources */,
 				12B75A9129F08F52001AA9F9 /* TorchError.swift in Sources */,
+				126312C529F3DA270069F6A4 /* HTTPClient.swift in Sources */,
+				126312D829F4529E0069F6A4 /* Seller.swift in Sources */,
 				126BC07529EFCDE500CEE880 /* FrameManager.swift in Sources */,
+				126312DA29F4539C0069F6A4 /* PaymentMethod.swift in Sources */,
 				126BC04129EFCAFC00CEE880 /* KuletaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,9 +612,10 @@
 				DEVELOPMENT_TEAM = 52AUGJGPW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kuleta/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Kuleta;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires access to your phone's camera.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kuleta requires access to your phone's camera.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -541,9 +646,10 @@
 				DEVELOPMENT_TEAM = 52AUGJGPW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kuleta/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Kuleta;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires access to your phone's camera.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Kuleta requires access to your phone's camera.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

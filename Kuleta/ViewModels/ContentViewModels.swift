@@ -11,6 +11,7 @@ import CoreImage
 class ContentViewModel: ObservableObject {
     private let frameManager = FrameManager.shared
     private let cameraManager = ScanManager.shared
+    private let invoiceCheckRepository = InvoiceCheckRepository.shared
 
     @Published var frame: CGImage?
     @Published var urlDetectedInImage: URL?
@@ -22,6 +23,23 @@ class ContentViewModel: ObservableObject {
 
     func toggleTorch(on: Bool) {
         frameManager.toggleTorch(on: on)
+    }
+
+    func startAgain() {
+        Task(priority: .background) {
+            let result = await invoiceCheckRepository.verifyInvoice(
+                iic: "BF69F1000A416D4FC4668367DA997DAD",
+                dateTimeCreated: "2023-04-19T18:38:41 02:00",
+                tin: "K21605003M"
+            )
+
+            switch result {
+            case let .success(response):
+                print(response)
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
 
     func setupSubscriptions() {
@@ -44,5 +62,8 @@ class ContentViewModel: ObservableObject {
             .receive(on: RunLoop.main)
             .map { $0 }
             .assign(to: &$error)
+
+        // wip
+        startAgain()
     }
 }

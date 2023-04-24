@@ -13,7 +13,7 @@ struct Seller: Codable {
     let idNum: String?
     let name: String?
     let address: String?
-    let country: String
+    let country: String?
 
     enum CodingKeys: String, CodingKey {
         case id

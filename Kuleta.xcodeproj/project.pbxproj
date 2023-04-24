@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12186AB329F4660200F154FB /* InvoiceCheckRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12186AB229F4660200F154FB /* InvoiceCheckRepository.swift */; };
+		122E725729F673AF00025205 /* ModelConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E725629F673AF00025205 /* ModelConvertible.swift */; };
+		122E725929F6740D00025205 /* ManagedObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E725829F6740D00025205 /* ManagedObjectConvertible.swift */; };
 		126312BA29F3D5CF0069F6A4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312B929F3D5CF0069F6A4 /* Endpoint.swift */; };
 		126312BC29F3D64F0069F6A4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312BB29F3D64F0069F6A4 /* HTTPMethod.swift */; };
 		126312BE29F3D6EF0069F6A4 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312BD29F3D6EF0069F6A4 /* RequestError.swift */; };
@@ -57,6 +59,8 @@
 
 /* Begin PBXFileReference section */
 		12186AB229F4660200F154FB /* InvoiceCheckRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCheckRepository.swift; sourceTree = "<group>"; };
+		122E725629F673AF00025205 /* ModelConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConvertible.swift; sourceTree = "<group>"; };
+		122E725829F6740D00025205 /* ManagedObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectConvertible.swift; sourceTree = "<group>"; };
 		126312B929F3D5CF0069F6A4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		126312BB29F3D64F0069F6A4 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		126312BD29F3D6EF0069F6A4 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 			children = (
 				126312BF29F3D7BF0069F6A4 /* Models */,
 				126312B729F3D52B0069F6A4 /* Network */,
+				122E725629F673AF00025205 /* ModelConvertible.swift */,
+				122E725829F6740D00025205 /* ManagedObjectConvertible.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -428,10 +434,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				126BC08129EFD1F600CEE880 /* FrameView.swift in Sources */,
+				122E725729F673AF00025205 /* ModelConvertible.swift in Sources */,
 				126312D629F451C40069F6A4 /* Tax.swift in Sources */,
 				126BC04A29EFCAFD00CEE880 /* Persistence.swift in Sources */,
 				126312DC29F453C80069F6A4 /* Item.swift in Sources */,
 				12186AB329F4660200F154FB /* InvoiceCheckRepository.swift in Sources */,
+				122E725929F6740D00025205 /* ManagedObjectConvertible.swift in Sources */,
 				126BC07129EFCC3B00CEE880 /* CameraError.swift in Sources */,
 				126312BA29F3D5CF0069F6A4 /* Endpoint.swift in Sources */,
 				126312BC29F3D64F0069F6A4 /* HTTPMethod.swift in Sources */,

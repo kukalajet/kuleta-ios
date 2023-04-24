@@ -33,10 +33,10 @@ extension HTTPClient {
         request.allHTTPHeaderFields = endpoint.header
 
         if let body = endpoint.body {
-            let httpBody =  getHttpBody(body: body, header: endpoint.header)
+            let httpBody = getHttpBody(body: body, header: endpoint.header)
             request.httpBody = httpBody
         }
-                
+
         do {
             let (data, response) = try await URLSession.shared.data(for: request, delegate: nil)
             guard let response = response as? HTTPURLResponse else {
@@ -58,7 +58,7 @@ extension HTTPClient {
             return .failure(.unknown)
         }
     }
-    
+
     func getHttpBody(
         body: [String: String] = [:],
         header: [String: String]?
@@ -67,7 +67,7 @@ extension HTTPClient {
             let httpBody = try? JSONSerialization.data(withJSONObject: body, options: [])
             return httpBody
         }
-        
+
         switch contentType {
         case "application/x-www-form-urlencoded":
             let parsedValue = body.reduce("") { "\($0)\($1.0)=\($1.1)&" }.dropLast()

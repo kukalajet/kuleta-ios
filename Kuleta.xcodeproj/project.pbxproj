@@ -35,7 +35,15 @@
 		126BC07D29EFD18A00CEE880 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC07C29EFD18A00CEE880 /* ErrorView.swift */; };
 		126BC08129EFD1F600CEE880 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC08029EFD1F600CEE880 /* FrameView.swift */; };
 		126BC08429EFD28000CEE880 /* ContentViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126BC08329EFD28000CEE880 /* ContentViewModels.swift */; };
+		1296FFE229F5CE73000A741D /* ItemManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296FFE129F5CE73000A741D /* ItemManagedObject.swift */; };
+		1296FFE429F5D061000A741D /* PaymentMethodManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296FFE329F5D061000A741D /* PaymentMethodManagedObject.swift */; };
+		1296FFE629F5D232000A741D /* InvoiceManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296FFE529F5D232000A741D /* InvoiceManagedObject.swift */; };
+		1296FFE829F5D630000A741D /* NSSetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1296FFE729F5D630000A741D /* NSSetExtension.swift */; };
 		12B75A9129F08F52001AA9F9 /* TorchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B75A9029F08F52001AA9F9 /* TorchError.swift */; };
+		12C6D36C29F5C2E800ACE4EF /* ManagedObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C6D36B29F5C2E800ACE4EF /* ManagedObjectConvertible.swift */; };
+		12C6D37029F5C65000ACE4EF /* TaxManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C6D36F29F5C65000ACE4EF /* TaxManagedObject.swift */; };
+		12C6D37229F5C7A800ACE4EF /* ModelConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C6D37129F5C7A800ACE4EF /* ModelConvertible.swift */; };
+		12C6D37429F5CBBB00ACE4EF /* SellerManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C6D37329F5CBBB00ACE4EF /* SellerManagedObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +95,15 @@
 		126BC07C29EFD18A00CEE880 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		126BC08029EFD1F600CEE880 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		126BC08329EFD28000CEE880 /* ContentViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModels.swift; sourceTree = "<group>"; };
+		1296FFE129F5CE73000A741D /* ItemManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagedObject.swift; sourceTree = "<group>"; };
+		1296FFE329F5D061000A741D /* PaymentMethodManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodManagedObject.swift; sourceTree = "<group>"; };
+		1296FFE529F5D232000A741D /* InvoiceManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceManagedObject.swift; sourceTree = "<group>"; };
+		1296FFE729F5D630000A741D /* NSSetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSetExtension.swift; sourceTree = "<group>"; };
 		12B75A9029F08F52001AA9F9 /* TorchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchError.swift; sourceTree = "<group>"; };
+		12C6D36B29F5C2E800ACE4EF /* ManagedObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectConvertible.swift; sourceTree = "<group>"; };
+		12C6D36F29F5C65000ACE4EF /* TaxManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxManagedObject.swift; sourceTree = "<group>"; };
+		12C6D37129F5C7A800ACE4EF /* ModelConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConvertible.swift; sourceTree = "<group>"; };
+		12C6D37329F5CBBB00ACE4EF /* SellerManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerManagedObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +131,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12186AB429F5470F00F154FB /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				126BC04929EFCAFD00CEE880 /* Persistence.swift */,
+				12C6D36B29F5C2E800ACE4EF /* ManagedObjectConvertible.swift */,
+				12C6D36F29F5C65000ACE4EF /* TaxManagedObject.swift */,
+				12C6D37329F5CBBB00ACE4EF /* SellerManagedObject.swift */,
+				1296FFE129F5CE73000A741D /* ItemManagedObject.swift */,
+				1296FFE329F5D061000A741D /* PaymentMethodManagedObject.swift */,
+				1296FFE529F5D232000A741D /* InvoiceManagedObject.swift */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
 		126312B629F3D5270069F6A4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				12186AB429F5470F00F154FB /* Persistance */,
 				126312BF29F3D7BF0069F6A4 /* Models */,
 				126312B729F3D52B0069F6A4 /* Network */,
 			);
@@ -153,6 +184,7 @@
 				126312D729F4529E0069F6A4 /* Seller.swift */,
 				126312D929F4539C0069F6A4 /* PaymentMethod.swift */,
 				126312DB29F453C80069F6A4 /* Item.swift */,
+				12C6D37129F5C7A800ACE4EF /* ModelConvertible.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,7 +242,6 @@
 				126BC04029EFCAFC00CEE880 /* KuletaApp.swift */,
 				126BC04229EFCAFC00CEE880 /* ContentView.swift */,
 				126BC04429EFCAFD00CEE880 /* Assets.xcassets */,
-				126BC04929EFCAFD00CEE880 /* Persistence.swift */,
 				126BC04B29EFCAFD00CEE880 /* Kuleta.xcdatamodeld */,
 				126BC04629EFCAFD00CEE880 /* Preview Content */,
 			);
@@ -257,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				126BC07729EFD0B000CEE880 /* CGImageExtension.swift */,
+				1296FFE729F5D630000A741D /* NSSetExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -428,8 +460,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				126BC08129EFD1F600CEE880 /* FrameView.swift in Sources */,
+				12C6D37029F5C65000ACE4EF /* TaxManagedObject.swift in Sources */,
 				126312D629F451C40069F6A4 /* Tax.swift in Sources */,
 				126BC04A29EFCAFD00CEE880 /* Persistence.swift in Sources */,
+				1296FFE629F5D232000A741D /* InvoiceManagedObject.swift in Sources */,
 				126312DC29F453C80069F6A4 /* Item.swift in Sources */,
 				12186AB329F4660200F154FB /* InvoiceCheckRepository.swift in Sources */,
 				126BC07129EFCC3B00CEE880 /* CameraError.swift in Sources */,
@@ -437,16 +471,22 @@
 				126312BC29F3D64F0069F6A4 /* HTTPMethod.swift in Sources */,
 				126BC04D29EFCAFD00CEE880 /* Kuleta.xcdatamodeld in Sources */,
 				126BC07829EFD0B000CEE880 /* CGImageExtension.swift in Sources */,
+				1296FFE229F5CE73000A741D /* ItemManagedObject.swift in Sources */,
+				12C6D37429F5CBBB00ACE4EF /* SellerManagedObject.swift in Sources */,
 				126BC07D29EFD18A00CEE880 /* ErrorView.swift in Sources */,
 				126312D229F44F230069F6A4 /* InvoiceCheckService.swift in Sources */,
 				126BC04329EFCAFC00CEE880 /* ContentView.swift in Sources */,
 				126312D429F450F00069F6A4 /* Invoice.swift in Sources */,
 				126BC08429EFD28000CEE880 /* ContentViewModels.swift in Sources */,
+				1296FFE829F5D630000A741D /* NSSetExtension.swift in Sources */,
 				126312D029F44D830069F6A4 /* InvoiceCheckEndpoint.swift in Sources */,
+				12C6D37229F5C7A800ACE4EF /* ModelConvertible.swift in Sources */,
 				126BC07329EFCC7D00CEE880 /* ScanManager.swift in Sources */,
 				126312BE29F3D6EF0069F6A4 /* RequestError.swift in Sources */,
 				12B75A9129F08F52001AA9F9 /* TorchError.swift in Sources */,
 				126312C529F3DA270069F6A4 /* HTTPClient.swift in Sources */,
+				12C6D36C29F5C2E800ACE4EF /* ManagedObjectConvertible.swift in Sources */,
+				1296FFE429F5D061000A741D /* PaymentMethodManagedObject.swift in Sources */,
 				126312D829F4529E0069F6A4 /* Seller.swift in Sources */,
 				126BC07529EFCDE500CEE880 /* FrameManager.swift in Sources */,
 				126312DA29F4539C0069F6A4 /* PaymentMethod.swift in Sources */,

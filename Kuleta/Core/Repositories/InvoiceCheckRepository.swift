@@ -17,7 +17,7 @@ protocol InvoiceCheckRepositable {
 
 struct InvoiceCheckRepository: InvoiceCheckRepositable {
     static let shared = InvoiceCheckRepository()
-    
+
     func verifyInvoice(
         iic: String,
         dateTimeCreated: String,

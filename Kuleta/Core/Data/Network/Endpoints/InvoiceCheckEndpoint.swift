@@ -34,7 +34,7 @@ extension InvoiceCheckEndpoint: Endpoint {
         switch self {
         case .verifyInvoice:
             return [
-                "Content-Type": "application/x-www-form-urlencoded"
+                "Content-Type": "application/x-www-form-urlencoded",
             ]
         }
     }

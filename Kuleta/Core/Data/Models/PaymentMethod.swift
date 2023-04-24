@@ -19,7 +19,7 @@ class PaymentMethod: Codable {
         case amount
         case typeCode
     }
-    
+
     init(id: Int?, type: String?, amount: Double?, typeCode: String?) {
         self.id = id
         self.type = type

@@ -10,6 +10,16 @@
 		12186AB329F4660200F154FB /* InvoiceCheckRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12186AB229F4660200F154FB /* InvoiceCheckRepository.swift */; };
 		122E725729F673AF00025205 /* ModelConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E725629F673AF00025205 /* ModelConvertible.swift */; };
 		122E725929F6740D00025205 /* ManagedObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E725829F6740D00025205 /* ManagedObjectConvertible.swift */; };
+		122E726529F67B8900025205 /* TaxManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E725B29F67B8900025205 /* TaxManagedObject+CoreDataClass.swift */; };
+		122E726629F67B8900025205 /* TaxManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E725C29F67B8900025205 /* TaxManagedObject+CoreDataProperties.swift */; };
+		122E726729F67B8900025205 /* SellerManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E725D29F67B8900025205 /* SellerManagedObject+CoreDataClass.swift */; };
+		122E726829F67B8900025205 /* SellerManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E725E29F67B8900025205 /* SellerManagedObject+CoreDataProperties.swift */; };
+		122E726929F67B8900025205 /* PaymentMethodManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E725F29F67B8900025205 /* PaymentMethodManagedObject+CoreDataClass.swift */; };
+		122E726A29F67B8900025205 /* PaymentMethodManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E726029F67B8900025205 /* PaymentMethodManagedObject+CoreDataProperties.swift */; };
+		122E726B29F67B8900025205 /* ItemManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E726129F67B8900025205 /* ItemManagedObject+CoreDataClass.swift */; };
+		122E726C29F67B8900025205 /* ItemManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E726229F67B8900025205 /* ItemManagedObject+CoreDataProperties.swift */; };
+		122E726D29F67B8900025205 /* InvoiceManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E726329F67B8900025205 /* InvoiceManagedObject+CoreDataClass.swift */; };
+		122E726E29F67B8900025205 /* InvoiceManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122E726429F67B8900025205 /* InvoiceManagedObject+CoreDataProperties.swift */; };
 		126312BA29F3D5CF0069F6A4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312B929F3D5CF0069F6A4 /* Endpoint.swift */; };
 		126312BC29F3D64F0069F6A4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312BB29F3D64F0069F6A4 /* HTTPMethod.swift */; };
 		126312BE29F3D6EF0069F6A4 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126312BD29F3D6EF0069F6A4 /* RequestError.swift */; };
@@ -61,6 +71,16 @@
 		12186AB229F4660200F154FB /* InvoiceCheckRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCheckRepository.swift; sourceTree = "<group>"; };
 		122E725629F673AF00025205 /* ModelConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConvertible.swift; sourceTree = "<group>"; };
 		122E725829F6740D00025205 /* ManagedObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectConvertible.swift; sourceTree = "<group>"; };
+		122E725B29F67B8900025205 /* TaxManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaxManagedObject+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		122E725C29F67B8900025205 /* TaxManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaxManagedObject+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		122E725D29F67B8900025205 /* SellerManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerManagedObject+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		122E725E29F67B8900025205 /* SellerManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SellerManagedObject+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		122E725F29F67B8900025205 /* PaymentMethodManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentMethodManagedObject+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		122E726029F67B8900025205 /* PaymentMethodManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentMethodManagedObject+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		122E726129F67B8900025205 /* ItemManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemManagedObject+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		122E726229F67B8900025205 /* ItemManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemManagedObject+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		122E726329F67B8900025205 /* InvoiceManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InvoiceManagedObject+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		122E726429F67B8900025205 /* InvoiceManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InvoiceManagedObject+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		126312B929F3D5CF0069F6A4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		126312BB29F3D64F0069F6A4 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		126312BD29F3D6EF0069F6A4 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
@@ -119,9 +139,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122E725A29F674A600025205 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				122E725B29F67B8900025205 /* TaxManagedObject+CoreDataClass.swift */,
+				122E725C29F67B8900025205 /* TaxManagedObject+CoreDataProperties.swift */,
+				122E725D29F67B8900025205 /* SellerManagedObject+CoreDataClass.swift */,
+				122E725E29F67B8900025205 /* SellerManagedObject+CoreDataProperties.swift */,
+				122E725F29F67B8900025205 /* PaymentMethodManagedObject+CoreDataClass.swift */,
+				122E726029F67B8900025205 /* PaymentMethodManagedObject+CoreDataProperties.swift */,
+				122E726129F67B8900025205 /* ItemManagedObject+CoreDataClass.swift */,
+				122E726229F67B8900025205 /* ItemManagedObject+CoreDataProperties.swift */,
+				122E726329F67B8900025205 /* InvoiceManagedObject+CoreDataClass.swift */,
+				122E726429F67B8900025205 /* InvoiceManagedObject+CoreDataProperties.swift */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
 		126312B629F3D5270069F6A4 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				122E725A29F674A600025205 /* Persistance */,
 				126312BF29F3D7BF0069F6A4 /* Models */,
 				126312B729F3D52B0069F6A4 /* Network */,
 				122E725629F673AF00025205 /* ModelConvertible.swift */,
@@ -434,30 +472,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				126BC08129EFD1F600CEE880 /* FrameView.swift in Sources */,
+				122E726829F67B8900025205 /* SellerManagedObject+CoreDataProperties.swift in Sources */,
 				122E725729F673AF00025205 /* ModelConvertible.swift in Sources */,
 				126312D629F451C40069F6A4 /* Tax.swift in Sources */,
 				126BC04A29EFCAFD00CEE880 /* Persistence.swift in Sources */,
 				126312DC29F453C80069F6A4 /* Item.swift in Sources */,
 				12186AB329F4660200F154FB /* InvoiceCheckRepository.swift in Sources */,
 				122E725929F6740D00025205 /* ManagedObjectConvertible.swift in Sources */,
+				122E726E29F67B8900025205 /* InvoiceManagedObject+CoreDataProperties.swift in Sources */,
 				126BC07129EFCC3B00CEE880 /* CameraError.swift in Sources */,
 				126312BA29F3D5CF0069F6A4 /* Endpoint.swift in Sources */,
 				126312BC29F3D64F0069F6A4 /* HTTPMethod.swift in Sources */,
+				122E726929F67B8900025205 /* PaymentMethodManagedObject+CoreDataClass.swift in Sources */,
+				122E726A29F67B8900025205 /* PaymentMethodManagedObject+CoreDataProperties.swift in Sources */,
 				126BC04D29EFCAFD00CEE880 /* Kuleta.xcdatamodeld in Sources */,
+				122E726729F67B8900025205 /* SellerManagedObject+CoreDataClass.swift in Sources */,
 				126BC07829EFD0B000CEE880 /* CGImageExtension.swift in Sources */,
 				126BC07D29EFD18A00CEE880 /* ErrorView.swift in Sources */,
 				126312D229F44F230069F6A4 /* InvoiceCheckService.swift in Sources */,
 				126BC04329EFCAFC00CEE880 /* ContentView.swift in Sources */,
 				126312D429F450F00069F6A4 /* Invoice.swift in Sources */,
 				126BC08429EFD28000CEE880 /* ContentViewModels.swift in Sources */,
+				122E726529F67B8900025205 /* TaxManagedObject+CoreDataClass.swift in Sources */,
 				126312D029F44D830069F6A4 /* InvoiceCheckEndpoint.swift in Sources */,
+				122E726C29F67B8900025205 /* ItemManagedObject+CoreDataProperties.swift in Sources */,
 				126BC07329EFCC7D00CEE880 /* ScanManager.swift in Sources */,
 				126312BE29F3D6EF0069F6A4 /* RequestError.swift in Sources */,
 				12B75A9129F08F52001AA9F9 /* TorchError.swift in Sources */,
 				126312C529F3DA270069F6A4 /* HTTPClient.swift in Sources */,
 				126312D829F4529E0069F6A4 /* Seller.swift in Sources */,
+				122E726629F67B8900025205 /* TaxManagedObject+CoreDataProperties.swift in Sources */,
 				126BC07529EFCDE500CEE880 /* FrameManager.swift in Sources */,
 				126312DA29F4539C0069F6A4 /* PaymentMethod.swift in Sources */,
+				122E726D29F67B8900025205 /* InvoiceManagedObject+CoreDataClass.swift in Sources */,
+				122E726B29F67B8900025205 /* ItemManagedObject+CoreDataClass.swift in Sources */,
 				126BC04129EFCAFC00CEE880 /* KuletaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
